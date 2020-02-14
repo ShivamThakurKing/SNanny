@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@drawable/icon"
+        android:layout_marginTop="1dp"
+        android:id="@+id/slidingimage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    </ImageView>
+    <TextView
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:textSize="37dp"
+        android:text="Become a nanny or get the nearest nanny"
+        android:layout_below="@id/slidingimage"
+        android:id="@+id/textviewheading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:fontFamily="sans-serif"
+        android:id="@+id/textviewdescription"
+        android:textColor="#6A111111"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:layout_below="@id/textviewheading"
+        android:text="@string/viewpager1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/recylerview_background"
+    android:layout_marginRight="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rec_img_background"
+            android:elevation="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/food1"
+            android:id="@+id/productimageview"
+            android:layout_width="150dp"
+            android:layout_height="70dp">
+
+        </ImageView>
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/imageviewperson"
+            android:src="@drawable/food1"
+            android:foreground="@drawable/img"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical"
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:fontFamily="sans-serif-medium"
+                android:text="Shivam Chib"
+                android:textColor="@android:color/black"
+                android:id="@+id/nametextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:fontFamily="sans-serif-thin"
+                android:drawableLeft="@drawable/loc_small"
+                android:text="Mohali"
+                android:textColor="@android:color/black"
+                android:id="@+id/locationtextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <RatingBar
+
+            android:layout_marginLeft="5dp"
+            android:id="@+id/personratingbar"
+            android:rating="3"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:numStars="5"
+            android:stepSize="1"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RatingBar>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="sans-serif-medium"
+            android:id="@+id/foodnametextview"
+            android:textStyle="normal"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Natural Herbs">
+
+        </TextView>
+        <TextView
+            android:fontFamily="sans-serif-thin"
+            android:id="@+id/deliverymonthtextview"
+            android:paddingRight="20dp"
+            android:textStyle="normal"
+            android:textAlignment="textEnd"
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="5 Months ago">
+
+        </TextView>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_alignParentLeft="true"
+            android:id="@+id/confirmbutton"
+            android:textSize="14dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_clicked"
+            android:layout_width="@dimen/width120"
+            android:layout_height="@dimen/height40"
+            android:layout_marginLeft="20dp"
+            android:text="@string/confirm">
+
+        </Button>
+        <Button
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:id="@+id/cancelorderbutton"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:layout_marginRight="@dimen/mar20"
+            android:background="@drawable/button_clicked"
+            android:layout_width="@dimen/width120"
+            android:layout_height="@dimen/height40"
+            android:layout_marginLeft="20dp"
+            android:text="@string/cancel"
+            >
+
+        </Button>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

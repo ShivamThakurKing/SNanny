@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="paddind">20sp</dimen>
+    <dimen name="padding">14dp</dimen>
+    <dimen name="mar10">10dp</dimen>
+    <dimen name="height50">50dp</dimen>
+    <dimen name="height80">80dp</dimen>
+    <dimen name="width50">50dp</dimen>
+    <dimen name="height30">30dp</dimen>
+    <dimen name="height100">100dp</dimen>
+    <dimen name="height20">20dp</dimen>
+    <dimen name="height70">70dp</dimen>
+    <dimen name="height85">85</dimen>
+    <dimen name="textsize25">25sp</dimen>
+    <dimen name="width120">120dp</dimen>
+    <dimen name="width40">40dp</dimen>
+    <dimen name="height40">40dp</dimen>
+    <dimen name="mar20">20dp</dimen>
+
+</resources>

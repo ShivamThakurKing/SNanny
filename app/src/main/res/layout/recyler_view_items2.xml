@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_marginTop="10dp"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/recylerview_background"
+    android:layout_marginRight="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/imageviewperson"
+            android:src="@drawable/food1"
+            android:foreground="@drawable/img"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical"
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:fontFamily="sans-serif-medium"
+                android:text="Shivam Chib"
+                android:textColor="@android:color/black"
+                android:id="@+id/nametextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:fontFamily="sans-serif-thin"
+                android:drawableLeft="@drawable/loc_small"
+                android:text="Mohali"
+                android:lines="1"
+                android:maxLines="1"
+                android:maxWidth="65dp"
+                android:textSize="10sp"
+                android:autoSizeMinTextSize="5sp"
+                android:textColor="@android:color/black"
+                android:id="@+id/locationtextview"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <RatingBar
+            android:layout_marginLeft="-15dp"
+            android:id="@+id/personratingbar"
+            android:rating="3"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:numStars="5"
+            android:stepSize="1"
+            android:layout_marginTop="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RatingBar>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/rec_img_background"
+        android:elevation="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/food1"
+        android:id="@+id/productimageview"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+    </ImageView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="sans-serif-medium"
+            android:id="@+id/foodnametextview"
+            android:textStyle="normal"
+            android:textSize="12dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Natural Herbs">
+
+        </TextView>
+        <TextView
+            android:fontFamily="sans-serif-thin"
+            android:id="@+id/deliverymonthtextview"
+            android:paddingRight="20dp"
+            android:textStyle="normal"
+            android:textAlignment="textEnd"
+            android:textSize="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="5 Months ago">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+        <TextView
+            android:fontFamily="sans-serif-thin"
+            android:id="@+id/foodreviewtextview"
+            android:paddingRight="20dp"
+            android:textStyle="normal"
+            android:textAlignment="textEnd"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/goodfood">
+
+        </TextView>
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:id="@+id/deliverytimetextview"
+            android:paddingRight="20dp"
+            android:textStyle="normal"
+            android:textColor="@android:color/black"
+            android:textAlignment="textEnd"
+            android:textSize="10sp"
+            android:lines="1"
+            android:maxLines="1"
+            android:autoSizeMinTextSize="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/deliverydate">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

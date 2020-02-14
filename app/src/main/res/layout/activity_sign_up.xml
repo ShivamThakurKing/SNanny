@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/imagesimple"
+        android:layout_width="140dp"
+        android:layout_height="160dp">
+
+    </ImageView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/onelayout"
+        android:elevation="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_width="320dp"
+        android:layout_height="70dp">
+        <ImageView
+
+            android:src="@drawable/ic_user"
+            android:id="@+id/loginimageview"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+        </ImageView>
+
+        <EditText
+            android:paddingLeft="15dp"
+            android:focusable="true"
+            android:background="@drawable/edit_text_background"
+            android:textStyle="normal"
+            android:textSize="18dp"
+            android:hint="Full Name"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/loginimageview"
+            android:layout_width="230dp"
+            android:layout_height="50dp">
+
+        </EditText>
+
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/onelayout"
+            android:id="@+id/twolayout"
+            android:elevation="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_width="320dp"
+            android:layout_height="70dp">
+            <ImageView
+
+                android:src="@drawable/ic_email"
+                android:id="@+id/signupemailimageview"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+            </ImageView>
+
+            <EditText
+                android:paddingLeft="15dp"
+                android:focusable="true"
+                android:background="@drawable/edit_text_background"
+                android:textStyle="normal"
+                android:textSize="18dp"
+                android:hint="Email"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/signupemailimageview"
+                android:layout_width="230dp"
+                android:layout_height="50dp">
+
+            </EditText>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/twolayout"
+            android:id="@+id/threelayout"
+            android:elevation="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_width="320dp"
+            android:layout_height="70dp">
+            <ImageView
+
+                android:src="@drawable/ic_phone"
+                android:id="@+id/phoneimageview"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+            </ImageView>
+
+            <EditText
+                android:paddingLeft="15dp"
+                android:focusable="true"
+                android:background="@drawable/edit_text_background"
+                android:textStyle="normal"
+                android:textSize="18dp"
+                android:hint="Phone Number"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/phoneimageview"
+                android:layout_width="230dp"
+                android:layout_height="50dp">
+
+            </EditText>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/threelayout"
+            android:id="@+id/fourlayout"
+            android:elevation="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_width="320dp"
+            android:layout_height="70dp">
+            <ImageView
+
+                android:src="@drawable/ic_padlock"
+                android:id="@+id/passwordimageview"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+            </ImageView>
+
+            <EditText
+                android:paddingLeft="15dp"
+                android:focusable="true"
+                android:background="@drawable/edit_text_background"
+                android:textStyle="normal"
+                android:textSize="18dp"
+                android:inputType="textPassword"
+                android:hint="Enter Password"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/passwordimageview"
+                android:layout_width="230dp"
+                android:layout_height="50dp">
+
+            </EditText>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/fourlayout"
+            android:id="@+id/fivelayout"
+            android:elevation="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_width="320dp"
+            android:layout_height="70dp">
+            <ImageView
+
+                android:src="@drawable/ic_padlock"
+                android:id="@+id/reenterpasswordimageview"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+            </ImageView>
+
+            <EditText
+                android:paddingLeft="15dp"
+                android:focusable="true"
+                android:background="@drawable/edit_text_background"
+                android:textStyle="normal"
+                android:textSize="18dp"
+                android:inputType="textPassword"
+                android:hint="Re-Enter Password"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/reenterpasswordimageview"
+                android:layout_width="230dp"
+                android:layout_height="50dp">
+
+            </EditText>
+
+
+
+
+        </RelativeLayout>
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/fivelayout"
+            android:layout_marginBottom="8dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_clicked"
+            android:text="@string/signup"
+            android:id="@+id/signupgetdetailsbutton"
+            android:layout_height="40dp"
+            android:layout_width="290dp">
+
+        </Button>
+
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

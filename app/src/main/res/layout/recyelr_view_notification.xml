@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/height80">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height70">
+
+        <ImageView
+            android:id="@+id/notificationimageview"
+            android:src="@drawable/food"
+            android:layout_marginLeft="@dimen/mar10"
+            android:layout_marginTop="@dimen/mar10"
+            android:layout_width="@dimen/height50"
+            android:layout_height="@dimen/width50">
+
+        </ImageView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/notificationfromperson"
+                android:layout_marginTop="@dimen/mar10"
+                android:layout_marginLeft="@dimen/mar10"
+                android:text="@string/notificationperson"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height20">
+
+            </TextView>
+            <TextView
+                android:id="@+id/notificationtime"
+                android:alpha=".4"
+                android:layout_marginLeft="@dimen/mar10"
+                android:text="@string/notificationpersontime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height30">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+
+</LinearLayout>

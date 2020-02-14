@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NaniOrBuyerActivity">
+
+    <RelativeLayout
+        android:id="@+id/viewpagerrelativelayout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_alignParentTop="true"
+            android:id="@+id/viewpagershowimages"
+            android:layout_width="match_parent"
+            android:layout_height="430dp">
+        </androidx.viewpager.widget.ViewPager>
+        <LinearLayout
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:id="@+id/sliderdots"
+            android:layout_below="@id/viewpagershowimages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:textStyle="normal"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:layout_below="@id/viewpagerrelativelayout"
+        android:text="@string/name"
+        android:id="@+id/whoareyoutextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <RelativeLayout
+        android:layout_marginTop="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/whoareyoutextview"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textColor="@color/myred"
+            android:background="@drawable/button_background"
+            android:text="@string/nani"
+            android:id="@+id/nanibutton"
+            android:layout_height="60dp"
+            android:layout_width="140dp">
+
+        </Button>
+        <Button
+            android:textColor="@color/myred"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/nanibutton"
+            android:background="@drawable/button_background"
+            android:text="@string/user"
+            android:id="@+id/userbutton"
+            android:layout_height="60dp"
+            android:layout_width="140dp">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

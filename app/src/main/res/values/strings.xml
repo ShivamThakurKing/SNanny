@@ -1,0 +1,47 @@
+<!DOCTYPE resources [<!ENTITY appname "MyAppName"><!ENTITY userphonenumber "9988776655">]>
+<resources>
+    <string name="app_name">SNanny</string>
+    <string name="viewpager1">Come and get the best offers from the app and earn rewards</string>
+    <string name="name">Who are you?</string>
+    <string name="nani">Nani</string>
+    <string name="user">User</string>
+    <string name="forgotpassword">Forgot Password?</string>
+    <string name="newaccount">New Users?</string>
+    <string name="signup">Sign Up</string>
+    <string name="Bank1">Enter Bank Name</string>
+    <string name="account1">Account Number</string>
+    <string name="accountnumber">Enter account number</string>
+    <string name="accname">Account holder Name</string>
+    <string name="accname2">Enter Account holder Name</string>
+    <string name="branchname">Branch Name</string>
+    <string name="branchname2">Enter Branch Name</string>
+    <string name="branchcode">Branch Code</string>
+    <string name="branchcode2">Enter Branch Code</string>
+    <string name="phonenumber">Mobile number</string>
+    <string name="phonenumber2">Enter Mobile Number</string>
+    <string name="next">Next</string>
+    <string name="phonenumberofperson">9988776655</string>
+    <string name="otptext">A Verification code has been sent to you at phonenumber &userphonenumber;.Please verify it</string>
+    <string name="entercode">Enter the Verification code.</string>
+    <string name="verifyotp">Verify OTP</string>
+    <string name="resendotp">Resend OTP</string>
+    <string name="home">Home</string>
+    <string name="myorders">My Orders</string>
+    <string name="payment">Payment</string>
+    <string name="goodfood">Nice Food..</string>
+    <string name="deliverydate">Delivery time : 5pm</string>
+    <string name="profile">Profile</string>
+    <string name="personName">Shivam Thakur</string>
+    <string name="editprofile">Edit profile</string>
+    <string name="email">Email</string>
+    <string name="examplemail">Example@example.com</string>
+    <string name="examplephone">9988776655</string>
+    <string name="notificationperson">ABCD has commented on your food.</string>
+    <string name="notificationpersontime">5 months ago</string>
+    <string name="notification">Notification</string>
+    <string name="bookfood">Order Food</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+
+    <style name="commentsonfood">Good Food</style>
+</resources>

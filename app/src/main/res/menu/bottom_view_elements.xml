@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        android:id="@+id/first">
+
+    </item>
+    <item
+        android:icon="@drawable/ic_search_red_24dp"
+        android:title="Discover"
+        android:id="@+id/second">
+
+    </item>
+    <item
+        android:icon="@drawable/ic_person_red_24dp"
+        android:title="Profile"
+        android:id="@+id/third">
+
+    </item>
+    <item
+        android:icon="@drawable/ic_settings_red_24dp"
+        android:title="Settings"
+        android:id="@+id/fourth">
+
+    </item>
+
+</menu>

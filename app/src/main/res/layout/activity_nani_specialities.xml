@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTPActivity">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/imagesimple"
+        android:layout_width="140dp"
+        android:layout_height="160dp">
+    </ImageView>
+
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ver1"
+            android:textAlignment="center"
+            android:text="@string/otptext"
+            android:textStyle="normal"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:id="@+id/vr2"
+            android:layout_marginTop="18dp"
+            android:layout_below="@id/ver1"
+            android:textAlignment="center"
+            android:text="@string/entercode"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/vr3"
+            android:layout_marginTop="18dp"
+            android:layout_below="@id/vr2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:inputType="number"
+                android:textAlignment="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="44dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+
+            </EditText>
+            <EditText
+                android:inputType="number"
+                android:textAlignment="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+
+            </EditText>
+            <EditText
+                android:inputType="number"
+                android:textAlignment="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+
+            </EditText>
+            <EditText
+                android:inputType="number"
+                android:textAlignment="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+
+            </EditText>
+
+        </LinearLayout>
+
+        <Button
+
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/vr3"
+            android:layout_marginBottom="8dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_clicked"
+            android:text="@string/verifyotp"
+            android:id="@+id/veriyotpbutton"
+            android:layout_height="40dp"
+            android:layout_width="300dp">
+
+        </Button>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/vr5"
+            android:layout_below="@id/veriyotpbutton"
+            android:textAlignment="center"
+            android:text="@string/resendotp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

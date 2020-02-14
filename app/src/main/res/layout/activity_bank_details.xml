@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BankDetails">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/imagesimple"
+        android:layout_width="140dp"
+        android:layout_height="160dp">
+    </ImageView>
+    <LinearLayout
+
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:text="Bank Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <EditText
+            android:focusable="true"
+            android:paddingLeft="15dp"
+            android:hint="@string/Bank1"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/edit_text_background"
+            android:layout_width="300dp"
+            android:layout_height="35dp">
+
+        </EditText>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:text="@string/account1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <EditText
+            android:focusable="true"
+            android:paddingLeft="15dp"
+            android:hint="@string/accountnumber"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/edit_text_background"
+            android:layout_width="300dp"
+            android:layout_height="35dp">
+
+        </EditText>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:text="@string/accname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <EditText
+            android:focusable="true"
+            android:paddingLeft="15dp"
+            android:hint="@string/accname2"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/edit_text_background"
+            android:layout_width="300dp"
+            android:layout_height="35dp">
+
+        </EditText>
+        <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:text="@string/branchname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+        <EditText
+            android:focusable="true"
+            android:paddingLeft="15dp"
+            android:hint="@string/branchname2"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/edit_text_background"
+            android:layout_width="300dp"
+            android:layout_height="35dp">
+
+        </EditText>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:text="@string/branchcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <EditText
+            android:focusable="true"
+            android:paddingLeft="15dp"
+            android:hint="@string/branchcode2"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/edit_text_background"
+            android:layout_width="300dp"
+            android:layout_height="35dp">
+
+        </EditText> <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:text="@string/phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+        <EditText
+            android:focusable="true"
+            android:paddingLeft="15dp"
+            android:hint="@string/phonenumber2"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/edit_text_background"
+            android:layout_width="300dp"
+            android:layout_height="35dp">
+
+        </EditText>
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/fivelayout"
+            android:layout_marginBottom="8dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_clicked"
+            android:text="@string/next"
+            android:id="@+id/nextstepbutton"
+            android:layout_height="40dp"
+            android:layout_width="300dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
