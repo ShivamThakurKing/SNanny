@@ -14,6 +14,14 @@
 
     </item>
     <item
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="Add"
+        android:id="@+id/addfood">
+
+    </item>
+
+
+    <item
         android:icon="@drawable/ic_person_red_24dp"
         android:title="Profile"
         android:id="@+id/third">

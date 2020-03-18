@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image">
+
+    <LinearLayout
+        android:id="@+id/usertermssettingslinear"
+        android:layout_marginTop="@dimen/mar100"
+        android:elevation="@dimen/elevation5"
+        android:background="@drawable/textview_background"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="@dimen/width300"
+        android:layout_height="@dimen/height50"
+        android:weightSum="100">
+
+        <TextView
+            android:paddingTop="@dimen/pad14"
+            android:layout_marginLeft="@dimen/mar10"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/size15"
+            android:textColor="@android:color/black"
+            android:text="@string/legalsettings"
+            android:id="@+id/legaltermssettings"
+            android:layout_weight="80"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_right_black_arrow_24dp"
+            android:layout_weight="30"
+            android:id="@+id/imageviewlegalsettings"
+            android:layout_width="@dimen/width20"
+            android:layout_height="@dimen/height20">
+
+        </ImageView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/userfaqsettingsprofile"
+        android:layout_marginTop="@dimen/mar10"
+        android:elevation="@dimen/elevation5"
+        android:background="@drawable/textview_background"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="@dimen/width300"
+        android:layout_height="@dimen/height50"
+        android:weightSum="100">
+
+        <TextView
+            android:paddingTop="@dimen/pad14"
+            android:layout_marginLeft="@dimen/mar10"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/size15"
+            android:textColor="@android:color/black"
+            android:text="@string/faqsettings"
+            android:id="@+id/faqsettings"
+            android:layout_weight="80"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_right_black_arrow_24dp"
+            android:layout_weight="30"
+            android:id="@+id/imageviewfaqsettings"
+            android:layout_width="@dimen/width20"
+            android:layout_height="@dimen/height20">
+
+        </ImageView>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

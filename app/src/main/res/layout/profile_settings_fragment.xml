@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="@dimen/width120"
+        android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:layout_marginTop="@dimen/mar40"
+        android:layout_gravity="center"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profileimagecheck"
+        android:layout_width="@dimen/width100"
+        android:layout_height="@dimen/height100"
+        android:src="@drawable/food"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/profileimagecheck1"
+            android:layout_width="@dimen/width30"
+            android:layout_height="@dimen/height30"
+            android:layout_marginTop="@dimen/mar40"
+            android:src="@drawable/ic_add_black_24dp"
+            android:background="@drawable/imagebutton_background"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/mar20"
+        android:id="@+id/edittextprofilesettings"
+        android:elevation="@dimen/elevation5"
+        android:background="@drawable/textview_background"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="@dimen/width300"
+        android:layout_height="@dimen/height50"
+        android:weightSum="100">
+
+        <EditText
+            android:paddingLeft="@dimen/pad10"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/mar10"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/size15"
+            android:textColor="@android:color/black"
+            android:hint="@string/namevalue"
+            android:id="@+id/profilesettings"
+            android:layout_weight="100"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/mar20"
+        android:id="@+id/edittextprofilesettings2"
+        android:elevation="@dimen/elevation5"
+        android:background="@drawable/textview_background"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="@dimen/width300"
+        android:layout_height="@dimen/height50"
+        android:weightSum="100">
+
+        <EditText
+            android:paddingLeft="@dimen/pad10"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/mar10"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/size15"
+            android:textColor="@android:color/black"
+            android:hint="@string/addressvalue"
+            android:id="@+id/locationsettings"
+            android:layout_weight="100"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </EditText>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/mar20"
+        android:id="@+id/edittextprofilesettings3"
+        android:background="@drawable/textview_background"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="@dimen/width300"
+        android:layout_height="wrap_content"
+        android:weightSum="100">
+
+        <TextView
+
+            android:layout_marginTop="@dimen/mar10"
+            android:paddingLeft="@dimen/pad15"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/size15"
+            android:textColor="@android:color/black"
+            android:text="@string/specialities"
+            android:id="@+id/profilesettings1"
+            android:layout_weight="30"
+            android:layout_width="@dimen/width100"
+            android:layout_height="@dimen/height0">
+
+        </TextView>
+
+        <Button
+            android:layout_marginTop="@dimen/mar10"
+            android:text="@string/specialitieslist"
+            android:background="@drawable/button_clicked"
+            android:id="@+id/spinnerspecialities"
+            android:layout_weight="40"
+            android:layout_width="@dimen/width200"
+            android:layout_height="@dimen/height0">
+
+        </Button>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/mar40"
+        android:layout_marginTop="@dimen/mar20"
+        android:id="@+id/edittextprofilesettings4"
+        android:elevation="@dimen/elevation5"
+        android:background="@drawable/textview_background"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="@dimen/width300"
+        android:layout_height="@dimen/height50"
+        android:weightSum="100">
+
+        <TextView
+            android:gravity="center|start"
+            android:paddingLeft="@dimen/pad10"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/mar10"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/size15"
+            android:textColor="@android:color/black"
+            android:hint="@string/changePassword"
+            android:id="@+id/changePasswordsettings"
+            android:layout_weight="90"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <ImageView
+            android:id="@+id/changepasswordimageview"
+            android:src="@drawable/ic_right_black_arrow_24dp"
+            android:layout_weight="10"
+
+            android:layout_width="@dimen/width0"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

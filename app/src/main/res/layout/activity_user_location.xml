@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserClasses.UserLocation">
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:map="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/map"
+android:name="com.google.android.gms.maps.SupportMapFragment"
+android:layout_width="match_parent"
+android:layout_height="@dimen/height250"
+tools:context=".UserClasses.UserLocation" />
+
+
+
+    <RelativeLayout
+    android:layout_below="@id/map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/mar10"
+            android:background="@drawable/textview_background"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/width320"
+            android:layout_height="@dimen/height50">
+
+
+            <EditText
+                android:id="@+id/addressedittext"
+                android:paddingLeft="@dimen/pad20"
+                android:hint="@string/addressvalue"
+                android:layout_marginTop="@dimen/mar5"
+                android:background="@null"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/width270"
+                android:layout_height="@dimen/height40">
+
+            </EditText>
+            <ImageView
+                android:src="@drawable/ic_mic_black_24dp"
+                android:layout_marginTop="@dimen/mar5"
+                android:layout_width="@dimen/width30"
+                android:layout_height="@dimen/height40">
+
+            </ImageView>
+
+        </LinearLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>

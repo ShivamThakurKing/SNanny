@@ -1,14 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:textSize="30dp"
-        android:text="Coming Soon..3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image">
 
-    </TextView>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbartop"
+        android:background="@android:color/holo_red_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/navigationdrawerbutton"
+                android:layout_marginLeft="-10dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_navigation_black_24dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+            </ImageView>
+            <TextView
+                android:fontFamily="sans-serif-medium"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"
+                android:text="@string/profile"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <ImageView
+                android:id="@+id/notificationbellicon"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/mar10"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_notification"
+                android:minHeight="20dp"
+                android:minWidth="20dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp">
+            </ImageView>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:id="@+id/profilesettingslinear"
+
+        android:layout_marginTop="@dimen/mar100"
+        android:elevation="@dimen/elevation5"
+        android:background="@drawable/textview_background"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="@dimen/width300"
+        android:layout_height="@dimen/height50"
+        android:weightSum="100">
+
+        <TextView
+            android:paddingTop="@dimen/pad14"
+            android:layout_marginLeft="@dimen/mar10"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/size15"
+            android:textColor="@android:color/black"
+            android:text="@string/profilesettings"
+            android:id="@+id/profilesettings"
+            android:layout_weight="80"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_right_black_arrow_24dp"
+            android:layout_weight="30"
+            android:id="@+id/imageviewprofilesettings"
+            android:layout_width="@dimen/width20"
+            android:layout_height="@dimen/height20">
+
+        </ImageView>
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/termssettingslinear"
+            android:layout_marginTop="@dimen/mar10"
+            android:elevation="@dimen/elevation5"
+            android:background="@drawable/textview_background"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/width300"
+            android:layout_height="@dimen/height50"
+            android:weightSum="100">
+
+            <TextView
+                android:paddingTop="@dimen/pad14"
+                android:layout_marginLeft="@dimen/mar10"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/size15"
+                android:textColor="@android:color/black"
+                android:text="@string/legalsettings"
+                android:id="@+id/legaltermssettings"
+                android:layout_weight="80"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </TextView>
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_right_black_arrow_24dp"
+                android:layout_weight="30"
+                android:id="@+id/imageviewlegalsettings"
+                android:layout_width="@dimen/width20"
+                android:layout_height="@dimen/height20">
+
+            </ImageView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/faqsettingsprofile"
+            android:layout_marginTop="@dimen/mar10"
+            android:elevation="@dimen/elevation5"
+            android:background="@drawable/textview_background"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/width300"
+            android:layout_height="@dimen/height50"
+            android:weightSum="100">
+
+            <TextView
+                android:paddingTop="@dimen/pad14"
+                android:layout_marginLeft="@dimen/mar10"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/size15"
+                android:textColor="@android:color/black"
+                android:text="@string/faqsettings"
+                android:id="@+id/faqsettings"
+                android:layout_weight="80"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </TextView>
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_right_black_arrow_24dp"
+                android:layout_weight="30"
+                android:id="@+id/imageviewfaqsettings"
+                android:layout_width="@dimen/width20"
+                android:layout_height="@dimen/height20">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+
+
+
+
 
 
 </LinearLayout>

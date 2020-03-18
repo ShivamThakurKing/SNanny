@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@android:color/holo_red_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/navigationdrawerbutton"
+                android:layout_marginLeft="-10dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_navigation_black_24dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+            </ImageView>
+            <TextView
+                android:textSize="25dp"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"
+                android:text="@string/additem"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <ImageView
+                android:id="@+id/notificationbellicon"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/mar10"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_notification"
+                android:minHeight="20dp"
+                android:minWidth="20dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp">
+            </ImageView>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:src="@drawable/food1"
+        android:id="@+id/addfoodimagefood"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/mar40"
+        android:layout_width="@dimen/width270"
+        android:layout_height="@dimen/height150">
+
+    </ImageView>
+
+     <com.google.android.material.textfield.TextInputLayout
+         android:layout_marginTop="@dimen/mar20"
+         android:layout_gravity="center"
+         android:hint="@string/nameoffood"
+         android:textColorHint="@color/myred"
+         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+         android:layout_width="@dimen/width270"
+         android:layout_height="@dimen/height50">
+
+         <com.google.android.material.textfield.TextInputEditText
+             android:paddingLeft="@dimen/pad10"
+             android:id="@+id/addfoodnameoffood"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+         </com.google.android.material.textfield.TextInputEditText>
+
+     </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="@dimen/mar20"
+            android:layout_gravity="center"
+            android:hint="@string/descriptionoffood"
+            android:textColorHint="@color/myred"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="@dimen/width270"
+            android:layout_height="@dimen/height50">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:paddingLeft="@dimen/pad10"
+                android:id="@+id/descriptionoffood"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:drawableRight="@drawable/button_down"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_clicked"
+                android:text= "Select any one item"
+                android:layout_marginTop="@dimen/mar20"
+                android:layout_gravity="center"
+                android:id="@+id/spinnneritem"
+                android:layout_width="@dimen/width270"
+                android:layout_height="@dimen/height40">
+            </Button>
+     <TextView
+         android:background="@android:color/white"
+         android:textColor="@android:color/black"
+         android:textAlignment="center"
+         android:layout_marginTop="@dimen/mar20"
+         android:layout_gravity="center"
+         android:text="@string/maxquanity"
+         android:layout_width="@dimen/width270"
+         android:layout_height="@dimen/height30">
+
+     </TextView>
+
+        <LinearLayout
+            android:background="@android:color/white"
+            android:layout_marginBottom="@dimen/mar20"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/width270"
+            android:layout_height="@dimen/height40">
+
+            <ImageButton
+                android:layout_marginTop="@dimen/mar5"
+                android:src="@drawable/ic_add_black_24dp"
+                android:id="@+id/addbutton"
+                android:layout_width="@dimen/width38"
+                android:layout_height="@dimen/height30"
+                android:layout_marginLeft="@dimen/mar60"
+                android:background="@drawable/add_button_background">
+
+            </ImageButton>
+
+            <TextView
+                android:textAlignment="center"
+                android:text="@string/one"
+                android:id="@+id/edittextquaninty"
+                android:layout_width="@dimen/height50"
+                android:layout_height="@dimen/height30"
+                android:background="@null"
+                android:textColor="@android:color/black">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/subtractbutton"
+                android:background="@drawable/ic_check_box_white_24dp"
+                android:layout_width="@dimen/width50"
+                android:layout_height="@dimen/height40">
+
+            </Button>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="@dimen/mar20"
+            android:layout_gravity="center"
+            android:hint="@string/quantityofmeasurment1"
+            android:textColorHint="@color/myred"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="@dimen/width270"
+            android:layout_height="@dimen/height50">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:paddingLeft="@dimen/pad10"
+                android:id="@+id/quantityofmeasurmentsperitem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="@dimen/mar20"
+            android:layout_gravity="center"
+            android:hint="@string/priceperitem"
+            android:textColorHint="@color/myred"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="@dimen/width270"
+            android:layout_height="@dimen/height50">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:paddingLeft="@dimen/pad10"
+                android:id="@+id/priceperitem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="@dimen/mar20"
+            android:layout_gravity="center"
+            android:hint="@string/listofingrediants1"
+            android:textColorHint="@color/myred"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="@dimen/width270"
+            android:layout_height="@dimen/height50">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:paddingLeft="@dimen/pad10"
+                android:id="@+id/listofingrediants"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:drawableRight="@drawable/button_down"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_clicked"
+            android:text= "My Specialities"
+            android:layout_marginTop="@dimen/mar20"
+            android:layout_gravity="center"
+            android:id="@+id/buttonitemspeciality"
+            android:layout_width="@dimen/width270"
+            android:layout_height="@dimen/height40">
+        </Button>
+
+        <CheckBox
+            android:layout_marginTop="@dimen/mar10"
+            android:layout_marginBottom="@dimen/mar10"
+            android:id="@+id/meatproductscheckbox"
+            android:text="@string/meatpresent"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </CheckBox>
+        <Spinner
+            android:id="@+id/spinnerallergies"
+            android:layout_marginTop="@dimen/mar5"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/width270"
+            android:layout_height="@dimen/height50">
+
+        </Spinner>
+
+        <Button
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_clicked"
+            android:text= "@string/post"
+            android:layout_marginTop="@dimen/mar20"
+            android:layout_gravity="center"
+            android:id="@+id/postitem"
+            android:layout_width="@dimen/width270"
+            android:layout_height="@dimen/height40"
+            android:layout_marginBottom="@dimen/mar20">
+        </Button>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

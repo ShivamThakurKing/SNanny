@@ -40,12 +40,16 @@
                     android:layout_height="wrap_content">
                 </TextView>
                 <ImageView
-                    android:layout_marginRight="5dp"
+                    android:id="@+id/notificationbellicon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/mar10"
                     android:layout_marginTop="5dp"
                     android:layout_alignParentRight="true"
                     android:src="@drawable/ic_notification"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp">
+                    android:minHeight="20dp"
+                    android:minWidth="20dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp">
                 </ImageView>
 
             </RelativeLayout>

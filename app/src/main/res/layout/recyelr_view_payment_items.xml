@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_color="#1BB81E"
+            app:civ_border_width="@dimen/width1"
+            android:id="@+id/imageviewpayment"
+            android:src="@drawable/ic_person_red_24dp"
+            android:layout_width="@dimen/width50"
+            android:layout_marginBottom="@dimen/mar10"
+            android:layout_height="@dimen/height50">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/width200"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:alpha=".9"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="@dimen/mar10"
+                android:id="@+id/nameid"
+                android:text="@string/shiivam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:alpha=".5"
+                android:textColor="@android:color/black"
+                android:drawablePadding="@dimen/pad5"
+                android:drawableLeft="@drawable/loc_color"
+                android:layout_marginLeft="@dimen/mar10"
+                android:id="@+id/locationid"
+                android:text="@string/amritsar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        <TextView
+            android:paddingRight="@dimen/pad10"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/black"
+            android:id="@+id/amountid"
+            android:text="@string/amount"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/mar10"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

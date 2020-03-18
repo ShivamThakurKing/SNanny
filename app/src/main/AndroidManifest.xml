@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.snanny">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS">
+
+    </uses-permission>
 
     <application
         android:allowBackup="true"
@@ -9,13 +20,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".OTPActivity" />
-        <activity android:name=".BankDetails" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".NaniLogin" />
-        <activity android:name=".NaniOrBuyerActivity" />
-        <activity android:name=".NaniHome">
+        <activity android:name=".NaniClasses.UserSignUp"></activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+        <uses-library android:name="com.google.android.maps"></uses-library>
+
+        <activity
+            android:name=".UserClasses.UserLocation"
+            android:label="@string/title_activity_user_location" />
+        <activity android:name=".NaniClasses.NaniHome"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".NaniClasses.NaniOrBuyerActivity" />
+        <activity android:name=".NaniClasses.OTPActivity" />
+        <activity android:name=".NaniClasses.BankDetails" />
+        <activity android:name=".NaniClasses.SignUpActivity" />
+        <activity android:name=".UserClasses.UserHome"
+            android:theme="@style/AppThemeActionBar"
+            />
+        <activity android:name=".NaniClasses.NaniLogin" />
+        <activity
+            android:name=".NaniClasses.MainActivity"
+            android:theme="@style/AppThemeActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

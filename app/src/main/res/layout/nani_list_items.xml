@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="@dimen/width80"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginLeft="@dimen/mar5"
+        app:civ_border_width="@dimen/width1"
+        app:civ_border_color="@android:color/holo_red_light"
+        android:src="@drawable/ic_person_red_24dp"
+        android:id="@+id/circular_image_view_nani_items"
+        android:layout_width="@dimen/width60"
+        android:layout_height="@dimen/height60">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <TextView
+        android:id="@+id/textviiew_nani_list_names"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/mar5"
+        android:text="@string/naniname1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/size10"
+        android:layout_width="@dimen/width70"
+        android:layout_height="@dimen/height30">
+
+    </TextView>
+
+</LinearLayout>

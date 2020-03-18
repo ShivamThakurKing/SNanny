@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:elevation="@dimen/elevation5"
+            android:background="@drawable/linear_layout_background"
+            android:layout_marginBottom="@dimen/mar20"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/mar50"
+            android:layout_width="@dimen/width250"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="@dimen/mar10"
+                android:id="@+id/getdetailsfoodimage"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/width230"
+                android:layout_height="@dimen/height140"
+                android:src="@drawable/food1">
+
+            </ImageView>
+            <TextView
+                android:id="@+id/getdetailsfoodname"
+                android:text="Food Name"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/size15"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:drawableLeft="@drawable/loc_small"
+                android:id="@+id/getdetailsaddressname"
+                android:text="Address"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/size15"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:drawableLeft="@drawable/loc_small"
+                android:id="@+id/getdetailsdeliverytime"
+                android:text="Delivery time : ?"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/size15"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <LinearLayout
+                android:layout_marginBottom="@dimen/mar10"
+                android:layout_marginTop="@dimen/mar20"
+                android:id="@+id/edittextprofilesettings4"
+                android:elevation="@dimen/elevation5"
+                android:background="@drawable/textview_background"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="@dimen/width200"
+                android:layout_height="@dimen/height50"
+                android:weightSum="100">
+
+                <TextView
+                    android:gravity="center|start"
+                    android:paddingLeft="@dimen/pad10"
+                    android:background="@null"
+                    android:layout_marginLeft="@dimen/mar10"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/size15"
+                    android:textColor="@android:color/black"
+                    android:hint="@string/itemcount"
+                    android:maxLines="1"
+                    android:autoSizeMinTextSize="@dimen/size10"
+                    android:id="@+id/getdetailsitemscount"
+                    android:layout_weight="50"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <TextView
+                    android:maxLines="1"
+                    android:autoSizeMinTextSize="@dimen/size10"
+                    android:gravity="center|start"
+                    android:paddingLeft="@dimen/pad10"
+                    android:background="@null"
+                    android:layout_marginLeft="@dimen/mar10"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/size15"
+                    android:textColor="@android:color/black"
+                    android:hint="@string/totalmoney"
+                    android:id="@+id/getdetailstotalmoneyamount"
+                    android:layout_weight="50"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+
+            </LinearLayout>
+            <RatingBar
+                android:layout_marginBottom="@dimen/mar10"
+                android:rating="3"
+                android:numStars="5"
+                android:layout_gravity="center"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </RatingBar>
+        </LinearLayout>
+
+        <TextView
+            android:paddingLeft="@dimen/pad14"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size20"
+            android:text="@string/description"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/width270"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:paddingLeft="@dimen/pad14"
+            android:textSize="@dimen/size10"
+            android:text="@string/descriptiontext"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/width270"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <View
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/mar5"
+            android:layout_marginBottom="@dimen/mar10"
+            android:background="#B3B4B9"
+            android:layout_width="@dimen/width270"
+            android:layout_height="@dimen/height1">
+
+        </View>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_width="@dimen/width270"
+            android:layout_height="@dimen/height30">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/mar15"
+                android:text="@string/quanity"
+                android:textSize="@dimen/size15"
+                android:textColor="@android:color/black"
+                android:layout_weight="55"
+                android:layout_width="@dimen/width0"
+                android:layout_height="match_parent">
+
+            </TextView>
+            <TextView
+                android:id="@+id/getdetailsquantityavailable"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/mar15"
+                android:text="@string/quanityvalue"
+                android:textSize="@dimen/size15"
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_weight="50"
+                android:layout_width="@dimen/width0"
+                android:layout_height="match_parent">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <View
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/mar5"
+            android:layout_marginBottom="@dimen/mar5"
+            android:background="#B3B4B9"
+            android:layout_width="@dimen/width270"
+            android:layout_height="@dimen/height1">
+
+        </View>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_width="@dimen/width270"
+            android:layout_height="@dimen/height30">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/mar15"
+                android:text="@string/quanityperitem"
+                android:textSize="@dimen/size15"
+                android:textColor="@android:color/black"
+                android:layout_weight="55"
+                android:layout_width="@dimen/width0"
+                android:layout_height="match_parent">
+
+            </TextView>
+            <TextView
+                android:id="@+id/getdetailsquantityperitem"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/mar15"
+                android:text="@string/quanityvalue"
+                android:textSize="@dimen/size15"
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_weight="50"
+                android:layout_width="@dimen/width0"
+                android:layout_height="match_parent">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <View
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/mar5"
+            android:layout_marginBottom="@dimen/mar5"
+            android:background="#B3B4B9"
+            android:layout_width="@dimen/width270"
+            android:layout_height="@dimen/height1">
+
+        </View>
+        <TextView
+            android:paddingLeft="@dimen/pad14"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size20"
+            android:text="@string/listofingrediants"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/width270"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:id="@+id/getdetailsingrediantslist"
+            android:paddingLeft="@dimen/pad14"
+            android:textSize="@dimen/size10"
+            android:text="@string/listofingrediantsvalue"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/width270"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <View
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/mar5"
+            android:layout_marginBottom="@dimen/mar5"
+            android:background="#B3B4B9"
+            android:layout_width="@dimen/width270"
+            android:layout_height="@dimen/height1">
+
+        </View>
+        <TextView
+            android:paddingLeft="@dimen/pad14"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size20"
+            android:text="@string/listofmeat"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/width270"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:id="@+id/getdetailsmeatlist"
+            android:paddingLeft="@dimen/pad14"
+            android:textSize="@dimen/size10"
+            android:text="@string/listofmeatproducts"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/width270"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <View
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/mar5"
+            android:layout_marginBottom="@dimen/mar5"
+            android:background="#B3B4B9"
+            android:layout_width="@dimen/width270"
+            android:layout_height="@dimen/height1">
+
+        </View>
+        <TextView
+            android:paddingLeft="@dimen/pad14"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size20"
+            android:text="@string/listofinstructions"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/width270"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/getdetailspreprationsinstructions"
+            android:paddingLeft="@dimen/pad14"
+            android:textSize="@dimen/size10"
+            android:text="@string/preprationsinstructions"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/width270"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/mar5"
+            android:layout_marginBottom="@dimen/mar5"
+            android:background="#B3B4B9"
+            android:layout_width="@dimen/width270"
+            android:layout_height="@dimen/height1">
+
+        </View>
+        <TextView
+            android:paddingLeft="@dimen/pad14"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size20"
+            android:text="@string/listofallergies"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/width270"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/getdetailsallergies"
+            android:paddingLeft="@dimen/pad14"
+            android:textSize="@dimen/size10"
+            android:text="@string/allergieslist"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/mar10"
+            android:layout_width="@dimen/width270"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="@dimen/mar10"
+            android:text="@string/quanity1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size20"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <LinearLayout
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/mar10"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/width200"
+            android:layout_height="@dimen/height50">
+
+            <ImageView
+                android:src="@drawable/ic_add_black_24dp"
+                android:background="@drawable/add_button_background"
+                android:id="@+id/buttonadd"
+                android:layout_weight="30"
+                android:layout_width="@dimen/width0"
+                android:layout_height="match_parent">
+
+            </ImageView>
+            <TextView
+                android:textAlignment="center"
+                android:text="@string/one1"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/size20"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="match_parent">
+            </TextView>
+
+            <ImageView
+                android:background="@drawable/add_button_background"
+                android:src="@drawable/ic_add_black_24dp"
+                android:id="@+id/buttonsubtract"
+                android:layout_weight="30"
+                android:layout_width="@dimen/width0"
+                android:layout_height="match_parent">
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/mar20"
+            android:layout_marginBottom="@dimen/mar10"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_clicked"
+            android:text="@string/chooseAddress"
+            android:id="@+id/chooseaddressbutton"
+            android:layout_height="@dimen/height40"
+            android:layout_width="@dimen/width300">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

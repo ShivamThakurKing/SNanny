@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity">
+    tools:context=".NaniClasses.SignUpActivity">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -47,6 +47,7 @@
         </ImageView>
 
         <EditText
+            android:id="@+id/nameofperson"
             android:paddingLeft="15dp"
             android:focusable="true"
             android:background="@drawable/edit_text_background"
@@ -86,6 +87,7 @@
             </ImageView>
 
             <EditText
+                android:id="@+id/emailedittext"
                 android:paddingLeft="15dp"
                 android:focusable="true"
                 android:background="@drawable/edit_text_background"
@@ -125,6 +127,7 @@
             </ImageView>
 
             <EditText
+                android:id="@+id/phonenumberedittext"
                 android:paddingLeft="15dp"
                 android:focusable="true"
                 android:background="@drawable/edit_text_background"
@@ -164,6 +167,7 @@
             </ImageView>
 
             <EditText
+                android:id="@+id/passwordedittext"
                 android:paddingLeft="15dp"
                 android:focusable="true"
                 android:background="@drawable/edit_text_background"
@@ -204,6 +208,7 @@
             </ImageView>
 
             <EditText
+                android:id="@+id/confirmpasswordedittext"
                 android:paddingLeft="15dp"
                 android:focusable="true"
                 android:background="@drawable/edit_text_background"

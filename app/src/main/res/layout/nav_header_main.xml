@@ -12,6 +12,7 @@
 
     </ImageView>
     <TextView
+        android:id="@+id/textviewnameofuser"
         android:layout_gravity="center"
         android:text="Shivam"
         android:textSize="15dp"
@@ -20,6 +21,7 @@
 
     </TextView>
     <TextView
+        android:id="@+id/textviewemailofuser"
         android:layout_gravity="center"
         android:text="Shivam@gmail.com"
         android:textSize="15dp"

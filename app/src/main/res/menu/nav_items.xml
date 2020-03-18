@@ -19,5 +19,12 @@
         android:icon="@drawable/ic_attach_money_black_24dp">
 
     </item>
+    <item
+        android:id="@+id/four"
+        android:title="@string/switchtouser"
+        android:icon="@drawable/ic_switch_arrows_black_24dp">
+
+    </item>
+
 
 </menu>

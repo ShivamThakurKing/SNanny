@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height330"
+    android:elevation="@dimen/elevation5"
+    android:layout_margin="@dimen/mar10"
+    android:background="@drawable/item_background">
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height60">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_color="@android:color/black"
+            app:civ_border_width="@dimen/width1"
+            android:layout_marginLeft="@dimen/mar10"
+            android:layout_marginTop="@dimen/mar10"
+            android:id="@+id/circleimageview_items"
+            android:layout_width="@dimen/width50"
+            android:layout_height="@dimen/height50">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <TextView
+            android:paddingTop="@dimen/pad10"
+            android:layout_marginTop="@dimen/mar10"
+            android:layout_marginLeft="@dimen/mar10"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size15"
+            android:text="@string/name1"
+            android:id="@+id/textviewname_items"
+            android:layout_width="@dimen/width170"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <RatingBar
+            android:id="@+id/ratingbaritem"
+            android:layout_marginTop="@dimen/mar20"
+            android:rating="4"
+            android:numStars="5"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RatingBar>
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageviewfood"
+        android:scaleType="fitXY"
+        android:src="@drawable/food1"
+        android:layout_margin="@dimen/mar10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height200">
+
+    </ImageView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height30">
+
+        <TextView
+            android:layout_marginLeft="@dimen/mar10"
+            android:text="@string/name2"
+            android:textSize="@dimen/size15"
+            android:textColor="@android:color/black"
+            android:id="@+id/textviewnameofdish_items"
+            android:layout_width="@dimen/width150"
+            android:layout_height="@dimen/height30">
+
+        </TextView>
+        <TextView
+            android:layout_marginLeft="@dimen/mar10"
+            android:paddingRight="@dimen/pad50"
+            android:textAlignment="textEnd"
+            android:text="@string/price"
+            android:textSize="@dimen/size15"
+            android:textColor="@android:color/black"
+            android:id="@+id/textviewpriceofdish_items"
+            android:layout_width="@dimen/width200"
+            android:layout_height="@dimen/height30">
+
+        </TextView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="@dimen/mar10"
+        android:text="@string/description"
+        android:textSize="@dimen/size10"
+        android:id="@+id/textviewdescriptionofdish_items"
+        android:layout_width="@dimen/width200"
+        android:layout_height="@dimen/height30"
+        android:layout_marginBottom="@dimen/mar10">
+
+    </TextView>
+
+
+
+
+
+</LinearLayout>
